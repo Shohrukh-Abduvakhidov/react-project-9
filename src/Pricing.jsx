@@ -283,8 +283,8 @@ const Pricing = () => {
                 <p className="mt-2">Support</p>
               </div>
             </div>
-            <div className="flex flex-col text-white items-center justify-between lg:flex lg:flex-row mt-32 border-t-2 border-[#606060] w-[1200]">
-              <div className="flex gap-10 items-center p-10">
+            <div className="flex flex-col text-white items-center justify-between lg:flex lg:flex-row mt-32 border-t-2 border-[#606060] lg:w-[1200]">
+              <div className="flex flex-col lg:flex-row gap-10 items-center p-10">
                 <img src={socials} alt="" />
                 <div className="flex gap-3 lg:flex lg:gap-10">
                   <p>Privacy Policy</p>
