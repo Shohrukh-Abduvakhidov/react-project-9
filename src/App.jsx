@@ -56,7 +56,7 @@ const App = () => {
           </button>
         </aside>
         {open && (
-          <div className="fixed right-[12px] pr-[10px] w-[200px] rounded-2xl bg-[#fff] top-0 h-[100vh] text-end">
+          <div className="fixed right-[0px] z-10 pr-[20px] w-[200px] rounded-2xl bg-[#fff] top-0 h-[100vh] text-end">
               <ul className="flex-col gap-[20px]">
                 <button className="text-[red] text-[30px] cursor-pointer px-[0px] font-boldk" onClick={closeModal}>X</button>
             <li className="py-[10px] text-[25px]">
