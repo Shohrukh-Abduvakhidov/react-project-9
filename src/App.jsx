@@ -55,8 +55,10 @@ const App = () => {
             Contact Us -&gt;
           </button>
         </aside>
-        <Modal open={open} className="w-[150px] border-[#fff] bg-white fixed right-0 ml-[260px]" onClose={closeModal} footer={null}>
-        <ul className="flex-col gap-[20px]">
+        {open && (
+          <div className="fixed right-[12px] pr-[10px] w-[200px] rounded-2xl bg-[#fff] top-0 h-[100vh] text-end">
+              <ul className="flex-col gap-[20px]">
+                <button className="text-[red] text-[30px] cursor-pointer px-[0px] font-boldk" onClick={closeModal}>X</button>
             <li className="py-[10px] text-[25px]">
              <Link to="/">Home</Link>
             </li>
@@ -76,7 +78,8 @@ const App = () => {
             <Link to="/detail">Detail Blog</Link>
             </li>
           </ul>
-        </Modal>
+          </div>
+        )}
       </nav>
       <Routes>
         <Route path="/" element={<HomePage />} />
