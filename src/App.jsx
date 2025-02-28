@@ -55,7 +55,7 @@ const App = () => {
             Contact Us -&gt;
           </button>
         </aside>
-        <Modal open={open} className="w-[150px] border-[#fff] bg-white fixed right-0 ml-[340px]" onClose={closeModal} footer={null}>
+        <Modal open={open} className="w-[150px] border-[#fff] bg-white fixed right-0 ml-[260px]" onClose={closeModal} footer={null}>
         <ul className="flex-col gap-[20px]">
             <li className="py-[10px] text-[25px]">
              <Link to="/">Home</Link>
