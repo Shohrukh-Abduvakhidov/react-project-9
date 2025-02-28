@@ -1,5 +1,6 @@
-import React from "react";
+import { useState } from "react";
 import "./App.css"
+import {Modal , Button} from "@mui/material"
 import burger from "./assets/burger.png"
 import { Routes, Route, Link } from "react-router-dom";
 import HomePage from "./homePage.jsx";
@@ -11,9 +12,12 @@ import Pricing from "./Pricing.jsx";
 import Contact from "./Contact.jsx";
 import Detail from "./Detail.jsx";
 const App = () => {
+  const [open,setOpen] = useState(false)
+  const openModal = () => setOpen(true)
+  const closeModal = () => setOpen(false)
   return (
     <>
-      <navbar className="w-[90%] m-auto flex gap-20 items-center justify-between py-[20px]">
+      <nav className="w-[90%] m-auto flex gap-20 items-center justify-between py-[20px]">
         <aside className="m-0">
           <img src={logo} alt="" className="m-0" />
         </aside>
@@ -42,6 +46,7 @@ const App = () => {
             src={burger}
             alt=""
             className="block m-0 lg:hidden w-[60px] h-[50px] px-[10px]"
+            onClick={openModal}
           />
           <button
             id="but-2"
@@ -50,7 +55,29 @@ const App = () => {
             Contact Us -&gt;
           </button>
         </aside>
-      </navbar>
+        <Modal open={open} className="w-[150px] border-[#fff] bg-white fixed right-0 ml-[340px]" onClose={closeModal} footer={null}>
+        <ul className="flex-col gap-[20px]">
+            <li className="py-[10px] text-[25px]">
+             <Link to="/">Home</Link>
+            </li>
+            <li className="py-[10px] text-[25px]">
+            <Link to="/about">About</Link>
+            </li>
+            <li className="py-[10px] text-[25px]">
+            <Link to="/blog">Blog</Link>
+            </li>
+            <li className="py-[10px] text-[25px]">
+            <Link to="/pricing">Pricing</Link>
+            </li>
+            <li className="py-[10px] text-[25px]">
+            <Link to="/contact">Contact</Link>
+            </li>
+            <li className="py-[10px] text-[25px]">
+            <Link to="/detail">Detail Blog</Link>
+            </li>
+          </ul>
+        </Modal>
+      </nav>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/blog" element={<BlogPage />} />
