@@ -12,7 +12,6 @@ import logo8 from "./assets/logo8.png";
 import office from "./assets/Image (4).png";
 import logo from "./assets/Logo (9).png"
 import socials from "./assets/Social media.png"
-
 const Contact = () => {
   return (
     <div>

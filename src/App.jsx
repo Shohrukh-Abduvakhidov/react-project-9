@@ -60,22 +60,22 @@ const App = () => {
               <ul className="flex-col gap-[20px]">
                 <button className="text-[red] text-[30px] cursor-pointer px-[0px] font-boldk" onClick={closeModal}>X</button>
             <li className="py-[10px] text-[25px]">
-             <Link to="/">Home</Link>
+             <Link to="/" onClick={closeModal}>Home</Link>
             </li>
             <li className="py-[10px] text-[25px]">
-            <Link to="/about">About</Link>
+            <Link to="/about" onClick={closeModal}>About</Link>
             </li>
             <li className="py-[10px] text-[25px]">
-            <Link to="/blog">Blog</Link>
+            <Link to="/blog" onClick={closeModal}>Blog</Link>
             </li>
             <li className="py-[10px] text-[25px]">
-            <Link to="/pricing">Pricing</Link>
+            <Link to="/pricing" onClick={closeModal}>Pricing</Link>
             </li>
             <li className="py-[10px] text-[25px]">
-            <Link to="/contact">Contact</Link>
+            <Link to="/contact" onClick={closeModal}>Contact</Link>
             </li>
             <li className="py-[10px] text-[25px]">
-            <Link to="/detail">Detail Blog</Link>
+            <Link to="/detail" onClick={closeModal}>Detail Blog</Link>
             </li>
           </ul>
           </div>
