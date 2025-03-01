@@ -181,7 +181,7 @@ const Pricing = () => {
                 <span className="text-gray-900 text-[30px] font-bold">-</span>
               </button>
               <div className="pl-4 text-gray-400">
-                <p className="w-[500px]">
+                <p className="lg:w-[500px]">
                   Yes, you can try us for free for 30 days. If you want, we'll
                   provide you with a free, personalized 30-minute onboarding
                   call to get you up and running as soon as possible.
