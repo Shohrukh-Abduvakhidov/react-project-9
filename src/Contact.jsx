@@ -12,6 +12,7 @@ import logo8 from "./assets/logo8.png";
 import office from "./assets/Image (4).png";
 import logo from "./assets/Logo (9).png"
 import socials from "./assets/Social media.png"
+
 const Contact = () => {
   return (
     <div>
@@ -91,7 +92,7 @@ const Contact = () => {
           </div>
         </div>
         <div className="flex w-[90%] mt-32">
-          <div className=" lg:relative bg-white lg:w-[608px] h-[784px] top-[50%] left-[10%] rounded-lg">
+          <div className="relative bg-white lg:w-[608px] h-[784px] top-[50%] left-[20%] lg:left-[10%] rounded-lg">
             <div className="p-10">
               <h1 className="text-2xl lg:text-5xl ">
                 Let’s level up your brand
@@ -103,7 +104,7 @@ const Contact = () => {
                 </span>
               </p>
             </div>
-            <div className="flex flex-col lg:flex lg:flex-row">
+            <div className="flex flex-col justify-center lg:flex lg:flex-row">
               <div>
                 <label htmlFor="inp1">First name</label>
                 <br />
